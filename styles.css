@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "CustomLogoFont";
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.left-container {
+    flex: 1;
+    flex-direction: column;
+    background-image: url(./images/leafs.avif);
+    background-size: cover;
+    height: 100vh;
+    /* Note that the <p> by default has margin: 1em */
+}
+
+.title {
+    position: relative;
+    top: 10%;
+    color: white;
+    font-family: "CustomLogoFont", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 90px;
+    text-align: center;
+}
+
+.title img {
+    height: 100px;
+    width: auto;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 20px;
+}
+
+.introduction p {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 20px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+}
